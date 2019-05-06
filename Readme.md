@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Жёваный Енот](https://up.htmlacademy.ru/htmlcss/25/user/854209).
-* Наставник: `Неизвестно`.
+* Наставник: [Рафаэль Гулиев](https://htmlacademy.ru/profile/thundercat).
 
 ---
 
