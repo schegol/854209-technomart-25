@@ -5,8 +5,90 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+    <header class="main-header">
+      <img width="240" height="24" alt="Логотип магазина «Техномарт»" src="http://placehold.it/240x24">
+      <input type="text" class="header-search-form" name="search" placeholder="Поиск:">
+      <ul>
+        <li><a class="bookmarks" href="#">Закладки: 0<a></li>
+        <li><a class="cart" href="#">Корзина: 0<a></li>
+        <li><a class="order" href="#">Оформить заказ<a></li>
+      </ul>
+      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <p class="header-contacts">
+        <span class="header-contacts-phone">+7 (812) 555-05-55</span>
+        <span class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+      </p>
+      <ul class="user-area">
+        <li><a href="#" class="button button-user-login">Войти</a></li>
+        <li><a href="#" class="button button-user-register">Регистрация</a></li>
+      </ul>
+      <nav class="main-nav">
+        <ul class="main-menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main class="container">
+      <section class="about">
+        <h2>Компания «Техномарт»</h2>
+        <p>
+          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+        </p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          Техномарт работает со многими транспортными компаниями:
+        </p>
+        <ul class="delivery-service-list">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+          <a class="button" href="#">Подробнее о компании</a>
+      </section>
+
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>
+          Вы можете забрать товар сами,<br>
+          заехав в наш офис:
+        </p>
+        <img class="map" src="http://placehold.it/150x100" width="150" height="100" alt="Как проехать в магазин">
+        <a class="button" href="#">Заблудились? Напишите нам!</a>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+
+    </footer>
+
+    <section class="popup popup-contact-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <p>
+        <label for="contact-us-name">Ваше имя:</label>
+        <input type="text" id="contact-us-name" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="contact-us-email">Ваш e-mail:</label>
+        <input type="text" id="contact-us-email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="contact-us-letter">Текст письма:</label>
+        <textarea id="contact-us-letter" name="letter" placeholder="В свободной форме"></textarea>
+      </p>
+      <span class="popup-close">x</span>
+    </section>
+
+    <section class="popup popup-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <!-- Здесь будет форма -->
+      <span class="popup-close">x</span>
+    </section>
 
   </body>
 </html>
