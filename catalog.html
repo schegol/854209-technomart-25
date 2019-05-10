@@ -55,63 +55,95 @@
       <h1>Перфораторы</h1>
 
       <section class="filters">
-        <h2>Производители:</h2>
-        <ul class="filter-brand">
-          <li>
-            <label>
-            <input type="checkbox" name="brand-bosch" checked>
-            Bosch
-            </label>
-          </li>
-          <li>
-            <label>
-            <input type="checkbox" name="brand-interskol">
-            Интерскол
-            </label>
-          </li>
-          <li>
-            <label>
-            <input type="checkbox" name="brand-makita" checked>
-            Makita
-            </label>
-          </li>
-          <li>
-            <label>
-            <input type="checkbox" name="brand-dewalt">
-            DeWalt
-            </label>
-          </li>
-          <li>
-            <label>
-            <input type="checkbox" name="brand-hitachi">
-            Hitachi
-            </label>
-          </li>
-        </ul>
-        <h2>Питание:</h2>
-        <ul class="filter-power-supply">
-          <li>
-            <label>
-            <input type="radio" name="power-supply-DC" checked>
-            Аккумуляторные
-            </label>
-          </li>
-          <li>
-            <label>
-            <input type="radio" name="power-supply-AC">
-            Сетевые
-            </label>
-          </li>
-        </ul>
+        <h2>Фильтр:</h2>
+
+        <section class="filter-price">
+          <h3>Цена:</h3>
+          <label class="visually-hidden">
+            <input type="range" name="price-range" min="1" max="50000" step="1">
+            Диапазон цен
+          </label>
+          <label class="visually-hidden">
+            <input type="text" name="min-price" placeholder="0">
+            Минимальная цена
+          </label>
+          <label class="visually-hidden">
+            <input type="text" name="max-price" placeholder="30000">
+            Максимальная цена
+          </label>
+        </section>
+        <section class="filter-brand">
+          <h3>Производители:</h3>
+          <ul class="filter-brand-list">
+            <li>
+              <label>
+              <input type="checkbox" name="brand-bosch" checked>
+              Bosch
+              </label>
+            </li>
+            <li>
+              <label>
+              <input type="checkbox" name="brand-interskol">
+              Интерскол
+              </label>
+            </li>
+            <li>
+              <label>
+              <input type="checkbox" name="brand-makita" checked>
+              Makita
+              </label>
+            </li>
+            <li>
+              <label>
+              <input type="checkbox" name="brand-dewalt">
+              DeWalt
+              </label>
+            </li>
+            <li>
+              <label>
+              <input type="checkbox" name="brand-hitachi">
+              Hitachi
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section class="filter-power-supply">
+          <h3>Питание:</h3>
+          <ul class="filter-power-supply-list">
+            <li>
+              <label>
+              <input type="radio" name="power-supply-DC" checked>
+              Аккумуляторные
+              </label>
+            </li>
+            <li>
+              <label>
+              <input type="radio" name="power-supply-AC">
+              Сетевые
+              </label>
+            </li>
+          </ul>
+        </section>
       </section>
 
       <section class="catalog">
         <h2 class="visually-hidden">Подходящие товары</h2>
 
+        <section class="catalog-sorting">
+          <h3>Сортировка</h3>
+          <ul class="sort-by">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
+            <li><a class="sorting-button sorting-button-increase sorting-button-active"></a></li>
+            <li><a class="sorting-button sorting-button-decrease"></a></li>
+          </ul>
+        </section>
+
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="#"><img class="item-preview" src="http://placehold.it/220x170" width="220" height="170" alt=""></a>
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <h4>Перфоратор BOSCH BFG 3000</h4>
             <p>
               <span class="item-price-before">22500 Р.</span>
               <span class="item-price">15500 Р.</span>
@@ -119,7 +151,7 @@
           </li>
           <li class="catalog-item">
             <a href="#"><img class="item-preview" src="http://placehold.it/220x170" width="220" height="170" alt=""></a>
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h4>Перфоратор BOSCH BFG 6000</h4>
             <p>
               <span class="item-price-before">30500 Р.</span>
               <span class="item-price">25500 Р.</span>
@@ -130,14 +162,14 @@
               <li><a class="button button-purchase-item" href="#">Купить</a></li>
               <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
             </ul>
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <h4>Перфоратор BOSCH BFG 2000</h4>
             <p>
               <span class="item-price">12500 Р.</span>
             </p>
           </li>
           <li class="catalog-item">
             <a href="#"><img class="item-preview" src="http://placehold.it/220x170" width="220" height="170" alt=""></a>
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <h4>Перфоратор BOSCH BFG 3000</h4>
             <p>
               <span class="item-price-before">22500 Р.</span>
               <span class="item-price">15500 Р.</span>
@@ -145,7 +177,7 @@
           </li>
           <li class="catalog-item catalog-item-new">
             <a href="#"><img class="item-preview" src="http://placehold.it/220x170" width="220" height="170" alt=""></a>
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h4>Перфоратор BOSCH BFG 6000</h4>
             <p>
               <span class="item-price-before">30500 Р.</span>
               <span class="item-price">25500 Р.</span>
@@ -153,14 +185,14 @@
           </li>
           <li class="catalog-item">
             <a href="#"><img class="item-preview" src="http://placehold.it/220x170" width="220" height="170" alt=""></a>
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <h4>Перфоратор BOSCH BFG 2000</h4>
             <p>
               <span class="item-price">12500 Р.</span>
             </p>
           </li>
           <li class="catalog-item catalog-item-new">
             <a href="#"><img class="item-preview" src="http://placehold.it/220x170" width="220" height="170" alt=""></a>
-            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <h4>Перфоратор BOSCH BFG 3000</h4>
             <p>
               <span class="item-price-before">22500 Р.</span>
               <span class="item-price">15500 Р.</span>
@@ -168,7 +200,7 @@
           </li>
           <li class="catalog-item">
             <a href="#"><img class="item-preview" src="http://placehold.it/220x170" width="220" height="170" alt=""></a>
-            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <h4>Перфоратор BOSCH BFG 6000</h4>
             <p>
               <span class="item-price-before">30500 Р.</span>
               <span class="item-price">25500 Р.</span>
@@ -176,12 +208,26 @@
           </li>
           <li class="catalog-item">
             <a href="#"><img class="item-preview" src="http://placehold.it/220x170" width="220" height="170" alt=""></a>
-            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <h4>Перфоратор BOSCH BFG 2000</h4>
             <p>
               <span class="item-price">12500 Р.</span>
             </p>
           </li>
         </ul>
+        <ul class="pagination">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+        </ul>
+      </section>
+
+      <section class="category-description">
+        <h2>Пара слов о перфораторах</h2>
+        <p>
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
       </section>
     </main>
 
