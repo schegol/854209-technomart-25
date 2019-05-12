@@ -7,7 +7,9 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <img width="240" height="24" alt="Логотип магазина «Техномарт»" src="http://placehold.it/240x24">
+        <a href="index.html">
+          <img width="240" height="24" alt="Логотип магазина «Техномарт»" src="http://placehold.it/240x24">
+        </a>
         <input type="text" class="header-search-form" name="search" placeholder="Поиск:">
         <ul>
           <li><a class="bookmarks" href="#">Закладки: 0</a></li>
@@ -46,7 +48,7 @@
 
     <main class="container">
       <ul class="breadcrumbs">
-        <li><a href="index.html"><img class="breadcrumbs-icon" src="http://placehold.it/10x10" width="10" height="10" alt="Ссылка на главную"></a></li>
+        <li><a href="index.html"><img class="icon breadcrumbs-icon" src="http://placehold.it/10x10" width="10" height="10" alt="Ссылка на главную"></a></li>
         <li><a href="index.html">Каталог</a></li>
         <li><a href="catalog.html">Инструмент</a></li>
         <li class="breadcrumbs-current"><a href="index.html">Перфораторы</a></li>
@@ -118,6 +120,7 @@
             </li>
           </ul>
         </section>
+        <a class="button" href="#">Показать</a>
       </section>
 
       <section class="catalog">
@@ -267,9 +270,20 @@
         </p>
         <p class="developer-copyrights">
           Разработано —<br>
-          <span><a href="https://htmlacademy.ru/">htmlacademy.ru</a></span>
+          <span><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></span>
         </p>
       </section>
     </footer>
+
+    <section class="popup popup-added-to-cart">
+      <img class="icon success-icon" src="http://placehold.it/60x60" width="60" height="60" alt="Успешно">
+      <h2>Товар добавлен в корзину!</h2>
+      <div class="added-to-cart-controls">
+        <a class="button" href="#">Оформить заказ</a>
+        <a class="button" href="#">Продолжить покупки</a>
+      </div>
+      <span class="popup-close">x</span>
+    </section>
+
   </body>
 </html>
