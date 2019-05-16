@@ -8,9 +8,9 @@
     <header class="main-header">
       <div class="header-top">
         <a class="logo-button">
-          <img width="109" height="18" alt="Логотип магазина «Техномарт»" src="img/logo-technomart.svg">
+          <img width="109" height="18" src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
         </a>
-        <input type="text" class="header-search-form" name="search" placeholder="Поиск:">
+        <input type="text" class="header-search-form" name="search" placeholder="Поиск:" aria-label="Строка поиска">
         <ul>
           <li><a class="bookmarks" href="#">Закладки: 0</a></li>
           <li><a class="cart" href="#">Корзина: 0</a></li>
@@ -197,7 +197,9 @@
           Вы можете забрать товар сами,<br>
           заехав в наш офис:
         </p>
-        <img class="map" src="img/map-small.png" width="300" height="158" alt="Как проехать в магазин">
+        <a href="#" class="map" aria-label="Открыть карту">
+          <img src="img/map-small.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </a>
         <a class="button" href="#">Заблудились? Напишите нам!</a>
       </section>
     </main>
@@ -235,9 +237,9 @@
         </p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button">VK</a></li>
-            <li><a class="social-button">Facebook</a></li>
-            <li><a class="social-button">Instagram</a></li>
+            <li><a class="social-button" href="#" aria-label="Техномарт Вконтакте">VK</a></li>
+            <li><a class="social-button" href="#" aria-label="Техномарт на Фейсбуке">Facebook</a></li>
+            <li><a class="social-button" href="#" aria-label="Техномарт в Инстаграме">Instagram</a></li>
           </ul>
         </div>
         <p class="developer-copyrights">
@@ -265,13 +267,13 @@
         <label for="contact-us-letter">Текст письма:</label>
         <textarea id="contact-us-letter" name="letter" placeholder="В свободной форме"></textarea>
       </p>
-      <span class="popup-close">x</span>
+      <span class="popup-close" aria-label="Закрыть форму">x</span>
     </section>
 
     <section class="popup popup-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <!-- Тут будет форма -->
-      <span class="popup-close">x</span>
+      <span class="popup-close" aria-label="Закрыть карту">x</span>
     </section>
 
   </body>
