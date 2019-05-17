@@ -59,17 +59,17 @@
       <form class="filters" action="#" method="post">
         <h2>Фильтр:</h2>
 
-        <div class="filter-price">
-          <h3>Цена:</h3>
+        <fieldset class="filter-price">
+          <legend>Цена:</legend>
           <label for="price-range" class="visually-hidden">Диапазон цен</label>
           <input type="range" name="price-range" id="price-range" min="1" max="50000" step="1">
           <label for="min-price" class="visually-hidden">Минимальная цена</label>
           <input type="text" name="min-price" id="min-price" placeholder="0">
           <label for="max-price" class="visually-hidden">Максимальная цена</label>
           <input type="text" name="max-price" id="max-price" placeholder="30000">
-        </div>
-        <div class="filter-brand">
-          <h3>Производители:</h3>
+        </fieldset>
+        <fieldset class="filter-brand">
+          <legend>Производители:</legend>
           <ul class="filter-brand-list">
             <li>
               <label>
@@ -102,9 +102,9 @@
               </label>
             </li>
           </ul>
-        </div>
-        <div class="filter-power-supply">
-          <h3>Питание:</h3>
+        </fieldset>
+        <fieldset class="filter-power-supply">
+          <legend>Питание:</legend>
           <ul class="filter-power-supply-list">
             <li>
               <label>
@@ -119,7 +119,7 @@
               </label>
             </li>
           </ul>
-        </div>
+        </fieldset>
         <input type="submit" value="Показать" class="filters-apply">
       </form>
 
