@@ -1,0 +1,167 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000;
+
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top li,
+.user-area-options li,
+.main-menu li,
+.catalog-item,
+.serives-list li,
+.delivery-service-list li,
+.footer-menu li,
+.footer-featured-menu li,
+.footer-social li, {
+  list-style: none;
+}
+
+.header-top {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+
+  background-color: #293449;
+}
+
+.logo-button {
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
+.logo-button:hover,
+.logo-button:focus {
+  background-color: #ca2c37;
+  border-bottom-color: #9a212a;
+}
+
+.logo-button:active {
+  background-color: #ba2732;
+  border-bottom-color: #8e1e26;
+}
+
+.header-search-form {
+  color: #fff;
+
+  background-color: #293449;
+}
+
+.header-search-form:hover {
+  background-color: #212a3a;
+}
+
+.header-search-form:focus {
+  color: #000;
+
+  background-color: #fff;
+}
+
+.bookmarks a,
+.cart a,
+.order a {
+  color: #fff;
+}
+
+.bookmarks a:hover,
+.bookmarks a:focus,
+.cart a:hover,
+.cart a:focus {
+  background-color: #212a3a;
+}
+
+.bookmarks a:active,
+.cart a:active {
+  background-color: #161d29;
+}
+
+.order a {
+  background-color: #63a63e;
+}
+
+.order a:hover,
+.order a:focus{
+  background-color: #5fbb2d;
+}
+
+.order a:active{
+  background-color: #518534;
+}
+
+.header-middle,
+.main-nav {
+  background-color: #f3f7f8;
+}
+
+.header-middle h1 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-contacts-phone a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.header-contacts-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.button-user-login,
+.button-user-register {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000;
+
+  background-color: #fff;
+}
+
+.button-user-login:hover,
+.button-user-login:focus,
+.button-user-register:hover,
+.button-user-register:focus {
+  color: #ee3643;
+}
+
+.button-user-login:active,
+.button-user-register:active {
+  color: #c5c5c5;
+}
+
+.main-menu {
+  font-size: 17px;
+  line-height: 17px;
+  color: #fff;
+
+  background-color: #32425c;
+}
+
+.main-menu a {
+  color: #fff;
+}
+.main-menu a:hover,
+.main-menu a:focus {
+  background-color: #293449;
+}
+
+.main-menu a:active {
+  color: #a8abaf;
+
+  background-color: #1d2739;
+}
