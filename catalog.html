@@ -13,7 +13,7 @@
         <a class="logo-button" href="index.html" aria-label="Вернутсья на главную">
           <img width="109" height="18" alt="Логотип магазина «Техномарт»" src="img/logo-technomart.svg">
         </a>
-        <input type="text" class="header-search-form" name="search" placeholder="Поиск:" aria-label="Строка поиска">
+        <input class="header-search-form" type="text" name="search" placeholder="Поиск:" aria-label="Строка поиска">
         <ul>
           <li class="bookmarks"><a href="#">Закладки: 0</a></li>
           <li class="cart"><a href="#">Корзина: 10</a></li>
@@ -57,7 +57,9 @@
         <li class="breadcrumbs-current"><a href="index.html">Перфораторы</a></li>
       </ul>
 
-      <h1>Перфораторы</h1>
+      <div class="catalog-heading">
+        <h1>Перфораторы</h1>
+      </div>
 
       <form class="filters" action="#" method="get">
         <h2>Фильтр:</h2>
@@ -106,9 +108,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter-power-supply">
+        <fieldset class="filter-power">
           <legend>Питание:</legend>
-          <ul class="filter-power-supply-list">
+          <ul class="filter-power-list">
             <li>
               <label>
               <input type="radio" name="power-supply" checked>
@@ -123,7 +125,7 @@
             </li>
           </ul>
         </fieldset>
-        <input type="submit" value="Показать" class="filters-apply">
+        <input class="filters-apply" type="submit" value="Показать">
       </form>
 
       <section class="catalog">
@@ -135,8 +137,8 @@
             <li><a href="#">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По функционалу</a></li>
-            <li><a href="#" class="sorting-button sorting-button-increase sorting-button-active">Сортировка по увеличению цены</a></li>
-            <li><a href="#" class="sorting-button sorting-button-decrease">Сортировка по уменьшению цены</a></li>
+            <li><a class="sorting-button sorting-button-increase sorting-button-active" href="#">Сортировка по увеличению цены</a></li>
+            <li><a class="sorting-button sorting-button-decrease" href="#">Сортировка по уменьшению цены</a></li>
           </ul>
         </section>
 
@@ -234,7 +236,7 @@
     <footer class="main-footer">
       <section class="footer-top">
         <h2 class="visually-hidden">Навигация футера</h2>
-        <a class="logo-button" href="index.html" aria-label="Вернуться на главную">
+        <a class="logo-footer" aria-label="Логотип магазина «Техномарт» в футере сайта">
           <img width="109" height="18" alt="Логотип магазина «Техномарт»" src="img/logo-technomart.svg">
         </a>
         <ul class="footer-menu">
@@ -246,7 +248,7 @@
         </ul>
         <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <a class="footer-navigation-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
         <ul class="footer-featured-menu">
           <li><a href="#">Материалы</a></li>
@@ -269,23 +271,23 @@
             <li><a class="social-button" href="#" aria-label="Техномарт в Инстаграме">Instagram</a></li>
           </ul>
         </div>
-        <p class="developer-copyrights">
+        <p class="developer-copyrights developer-copyrights-mail">
           Обратная связь:<br>
-          <span><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></span>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <p class="developer-copyrights">
+        <p class="developer-copyrights developer-copyrights-link">
           Разработано —<br>
-          <span><a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a></span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
         </p>
       </section>
     </footer>
 
-    <section class="popup popup-added-to-cart">
+    <section class="popup popup-item-added">
       <img class="icon success-icon" src="http://placehold.it/60x60" width="60" height="60" alt="Успешно">
       <h2>Товар добавлен в корзину!</h2>
-      <div class="added-to-cart-controls">
-        <a class="button" href="#">Оформить заказ</a>
-        <button class="added-to-cart-close">Продолжить покупки</button>
+      <div class="item-added-controls">
+        <a class="button button-red" href="#">Оформить заказ</a>
+        <button class="button item-added-close">Продолжить покупки</button>
       </div>
       <span class="popup-close" aria-label="Закрыть форму">x</span>
     </section>
