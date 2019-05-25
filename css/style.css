@@ -32,6 +32,19 @@ a {
   display: none;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.flex-wrap {
+  display: flex;
+}
+
+.button {
+  display: block;
+}
+
 .header-top ul,
 .user-area-options,
 .main-menu,
@@ -40,7 +53,7 @@ a {
 .delivery-service-list,
 .footer-menu,
 .footer-featured-menu,
-.footer-social,
+.footer-social ul,
 .user-links,
 .breadcrumbs,
 .filter-brand-list,
@@ -51,7 +64,15 @@ a {
   list-style: none;
 }
 
+.main-header {
+  margin-bottom: 60px;
+}
+
 .header-top {
+  margin: 0;
+  padding: 0;
+  min-height: 42px;
+
   font-weight: normal;
   font-size: 17px;
   line-height: 18px;
@@ -59,8 +80,17 @@ a {
   background-color: #293449;
 }
 
+.main-navigation {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 60px;
+}
+
 .logo-button,
 .logo-footer {
+  display: block;
+  width: 220px;
+
   background-color: #ee3643;
   border-bottom: 5px solid #b52933;
 }
@@ -123,12 +153,24 @@ a {
   background-color: #518534;
 }
 
-.header-middle,
-.main-nav {
+.header-bottom .flex-wrap {
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.header-bottom {
+  margin: 0;
+  padding: 0;
+
   background-color: #f3f7f8;
 }
 
-.header-middle h1 {
+.header-bottom h1 {
+  display: inline-block;
+  width: 300px;
+  /* padding: 0 50px; */
+
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
@@ -172,6 +214,12 @@ a {
 }
 
 .main-menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+
   font-size: 17px;
   line-height: 17px;
   color: #fff;
@@ -309,11 +357,25 @@ a {
   text-transform: uppercase;
 }
 
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  width: 540px
+}
+
+.contacts {
+  width: 300px;
+}
+
 .about h2,
 .contacts h2 {
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
 .about p,
@@ -327,6 +389,8 @@ a {
 }
 
 .button-red {
+  height: 38px;
+
   font-size: 14px;
   line-height: 18px;
   color: #fff;
@@ -335,6 +399,12 @@ a {
 
   background-color: #ee3643;
   border-radius: 2px;
+}
+
+.main-footer {
+  margin: 0;
+  padding: 0;
+  padding-top: 85px;
 }
 
 .footer-top {
@@ -385,10 +455,23 @@ a {
   background-color: #293449;
 }
 
+.footer-bottom .container {
+  display: flex;
+}
+
 .shop-copyrights {
+  padding: 0;
+  margin: 0;
+  margin-right: 160px;
+  width: 230px;
+
   font-size: 16px;
   line-height: 18px;
   color: #fff;
+}
+
+.footer-social {
+  width: 130px;
 }
 
 .footer-social li {
@@ -400,6 +483,8 @@ a {
 }
 
 .developer-copyrights {
+  margin-left: auto;
+
   font-size: 16px;
   line-height: 18px;
   color: #fff;
