@@ -145,6 +145,10 @@ a {
   background-color: #161d29;
 }
 
+.cart-full a {
+  background-color: #ee3643;
+}
+
 .order a {
   background-color: #63a63e;
 }
