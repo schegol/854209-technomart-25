@@ -66,11 +66,11 @@
 
         <fieldset class="filter-price">
           <legend>Цена:</legend>
-          <label for="price-range" class="visually-hidden">Диапазон цен</label>
-          <input type="range" name="price-range" id="price-range" min="1" max="50000" step="1">
-          <label for="min-price" class="visually-hidden">Минимальная цена</label>
+          <label class="visually-hidden" for="price-range">Диапазон цен</label>
+          <input type="range" name="price-range" id="price-range" min="1" max="30000" step="1">
+          <label class="visually-hidden" for="min-price">Минимальная цена</label>
           <input type="text" name="min-price" id="min-price" placeholder="0">
-          <label for="max-price" class="visually-hidden">Максимальная цена</label>
+          <label class="visually-hidden" for="max-price">Максимальная цена</label>
           <input type="text" name="max-price" id="max-price" placeholder="30000">
         </fieldset>
         <fieldset class="filter-brand">
@@ -134,9 +134,9 @@
         <section class="catalog-sorting">
           <h3>Сортировка</h3>
           <ul class="sort-by">
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По функционалу</a></li>
+            <li><a class="sorting-link sorting-link-active" href="#">По цене</a></li>
+            <li><a class="sorting-link" href="#">По типу</a></li>
+            <li><a class="sorting-link" href="#">По функционалу</a></li>
             <li><a class="sorting-button sorting-button-increase sorting-button-active" href="#">Сортировка по увеличению цены</a></li>
             <li><a class="sorting-button sorting-button-decrease" href="#">Сортировка по уменьшению цены</a></li>
           </ul>
