@@ -427,6 +427,7 @@ a {
 
 .footer-top .flex-wrap {
   justify-content: space-between;
+  /* padding-bottom: 3px; */
 }
 
 .footer-menu,
@@ -472,7 +473,6 @@ a {
 .footer-navigation-phone {
   color: #f1f5f7;
 }
-
 
 .footer-featured-menu a {
   font-size: 18px;
