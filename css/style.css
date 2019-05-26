@@ -69,10 +69,6 @@ a {
   padding: 0;
 }
 
-.main-header {
-  margin-bottom: 60px;
-}
-
 .header-top {
   margin: 0;
   padding: 0;
@@ -250,6 +246,10 @@ a {
   background-color: #1d2739;
 }
 
+.promo {
+  margin-top: 60px;
+}
+
 .promo-block h3 {
   font-size: 24px;
   line-height: 30px;
@@ -377,6 +377,7 @@ a {
 
 .contacts {
   width: 300px;
+  margin-bottom: 85px;
 }
 
 .about h2,
@@ -422,7 +423,6 @@ a {
 .main-footer {
   margin: 0;
   padding: 0;
-  padding-top: 85px;
 }
 
 .footer-top {
@@ -560,6 +560,8 @@ a {
   font-size: 21px;
   line-height: 21px;
   color: #000;
+
+  background-color: #fff;
 }
 
 .user-name:active {
@@ -582,6 +584,15 @@ a {
   color: #c5cad0;
 }
 
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .breadcrumbs a {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -590,14 +601,33 @@ a {
 }
 
 .catalog-heading {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
   background-color: #f2f6f8;
 }
 
 .catalog-heading h1 {
+  margin: 0;
+  padding: 35px 0 35px 30px;
+
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   color: #32425c;
+  text-transform: uppercase;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.filters-column{
+  width: 220px;
+}
+.catalog-column {
+  width: 700px;
 }
 
 .filters {
@@ -659,6 +689,9 @@ label input[type=checkbox]:disabled {
 }
 
 .catalog-sorting {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -667,8 +700,19 @@ label input[type=checkbox]:disabled {
   background-color: #f7f3ec;
 }
 
+.catalog-sorting .flex-wrap {
+  justify-content: space-between;
+}
+
 .catalog-sorting h3 {
+  font-size: 13px;
+  line-height: 18px;
   font-weight: normal;
+}
+
+.sort-by {
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-link:not(.sorting-link-active) {
@@ -686,6 +730,29 @@ label input[type=checkbox]:disabled {
 
 .sorting-link-active {
   color: #ee3643;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item {
+  margin: 0;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  padding: 0;
+  width: 220px;
+  min-height: 316px;
+  box-sizing: border-box;
+
+  border: 1px solid #e5e5e5;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item h4 {
@@ -795,6 +862,9 @@ label input[type=checkbox]:disabled {
 }
 
 .category-description {
+  margin: 0;
+  padding: 0;
+
   background-color: #f2f6f8;
 }
 
