@@ -676,6 +676,12 @@ label input[type=checkbox]:disabled {
   color: #b8b8b8;
 }
 
+.filter-brand-list,
+.filter-power-list {
+  margin: 0;
+  padding: 0;
+}
+
 .filters-apply {
   font-size: 13px;
   line-height: 18px;
