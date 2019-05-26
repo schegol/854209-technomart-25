@@ -89,6 +89,8 @@ a {
 
 .logo-button,
 .logo-footer {
+  margin: 0;
+  padding: 0;
   display: block;
   width: 220px;
 
@@ -546,14 +548,70 @@ a {
   text-decoration: none;
 }
 
+.contact-us-container {
+  margin: 0 auto;
+  width: 460px;
+}
+
+.popup-contact-us .flex-wrap {
+  flex-direction: column;
+}
+
 .popup-contact-us {
+  margin: 0 auto;
+  padding: 0;
+  width: 620px;
+  min-height: 423px;
+
   border-top: 7px solid #ff5357;
+}
+
+.popup-contact-us fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.text-field-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-text-field {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  border: 2px solid #dee3e4;
+  border-radius: 2px;
+}
+
+.text-field-small {
+  width: 220px;
+  min-height: 38px;
+}
+
+.text-field-big {
+  width: 460px;
+  min-height: 114px;
 }
 
 .popup-contact-us label {
   font-size: 18px;
   line-height: 18px;
   color: #000;
+}
+
+.popup-contact-us .button-red {
+  margin: 0 auto;
+  padding: 0;
+
+  border: none;
+}
+
+.popup-submit-background {
+  background-color: #f4f4f4;
 }
 
 .user-name {
@@ -635,10 +693,15 @@ a {
 }
 
 .filters h2 {
+  margin: 0;
+  padding: 12px 0 12px 18px;
+
   font-size: 13px;
   line-height: 18px;
+  font-weight: normal;
   text-transform: uppercase;
 
+  border-radius: 3px;
   background-color: #f7f3ec;
 }
 
@@ -647,11 +710,17 @@ a {
 }
 
 .filter-price input[type="text"] {
+  margin: 0;
+  padding: 0;
+  width: 95px;
+  min-height: 38px;
+
   font-size: 17px;
   line-height: 18px;
   text-align: center;
 
   border: none;
+  border-radius: 3px;
   background-color: #f7f3ec;
 }
 
@@ -671,8 +740,8 @@ a {
   text-transform: uppercase;
 }
 
-label input[type=radio]:disabled,
-label input[type=checkbox]:disabled {
+.filters input[type=radio]:disabled,
+.filters input[type=checkbox]:disabled {
   color: #b8b8b8;
 }
 
@@ -683,8 +752,12 @@ label input[type=checkbox]:disabled {
 }
 
 .filters fieldset {
+  margin: 0;
+  padding: 0;
   width: 220px;
   box-sizing: border-box;
+
+  border: none;
 }
 
 .filters-apply {
@@ -708,6 +781,7 @@ label input[type=checkbox]:disabled {
   line-height: 18px;
   text-transform: uppercase;
 
+  border-radius: 3px;
   background-color: #f7f3ec;
 }
 
@@ -911,9 +985,13 @@ label input[type=checkbox]:disabled {
 }
 
 .item-added-close {
+  margin: 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 
+  border: none;
   background-color: #fff;
 }
