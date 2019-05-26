@@ -682,6 +682,11 @@ label input[type=checkbox]:disabled {
   padding: 0;
 }
 
+.filters fieldset {
+  width: 220px;
+  box-sizing: border-box;
+}
+
 .filters-apply {
   font-size: 13px;
   line-height: 18px;
