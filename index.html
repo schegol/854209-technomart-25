@@ -57,47 +57,46 @@
     <main>
       <section class="promo container">
         <h2 class="visually-hidden">Специальные предложения</h2>
-        <div class="promo-block promo-block-materials promo-block-new">
-          <h3>Материалы</h3>
-          <a class="button button-promo" href="#">На любой вкус</a>
-          <img src="http://placehold.it/44x65" alt="Материалы (иконка)" width="44" height="65">
+        <div class="promo-top-row">
+          <div class="promo-block promo-block-materials promo-block-new promo-block-small">
+            <h3>Материалы</h3>
+            <a class="button button-promo" href="#">На любой вкус</a>
+          </div>
+          <div class="promo-block promo-block-tools promo-block-small">
+            <h3>Инструмент</h3>
+            <a class="button button-promo" href="#">На все случаи</a>
+          </div>
+          <div class="promo-block promo-block-tech promo-block-small">
+            <h3>Техника</h3>
+            <a class="button button-promo" href="#">Для стройки</a>
+          </div>
         </div>
-        <div class="promo-block promo-block-tools">
-          <h3>Инструмент</h3>
-          <a class="button button-promo" href="#">На все случаи</a>
-          <img src="http://placehold.it/44x65" alt="Инструмент (иконка)" width="44" height="65">
-        </div>
-        <div class="promo-block promo-block-tech">
-          <h3>Техника</h3>
-          <a class="button button-promo" href="#">Для стройки</a>
-          <img src="http://placehold.it/44x65" alt="Техника (иконка)" width="44" height="65">
-        </div>
-        <div class="promo-block promo-block-slider">
-          <img src="img/slide-1.jpg" alt="Слайд 1" width="620" height="266">
-          <p>
-            <b>Перфораторы</b>
-            Настоящие мужские игрушки
-          </p>
-          <img src="img/slide-2.jpg" alt="Слайд 2" width="620" height="266">
-          <p>
-            <b>Дрели</b>
-            Соседям на радость!
-          </p>
-          <a class="button button-red slider-button" href="catalog.html">Открыть каталог</a>
-          <label class="visually-hidden" for="slide-1">Первый слайд</label>
-          <input type="radio" name="toggle-slide" id="slide-1">
-          <label class="visually-hidden" for="slide-2">Второй слайд</label>
-          <input type="radio" name="toggle-slide" id="slide-2" checked>
-        </div>
-        <div class="promo-block promo-block-discount">
-          <h3>Скидки 50%</h3>
-          <a class="button button-promo" href="#">На 350 товаров</a>
-          <img src="http://placehold.it/44x65" alt="Скидки (иконка)" width="44" height="65">
-        </div>
-        <div class="promo-block promo-block-delivery">
-          <h3>Доставка</h3>
-          <a class="button button-promo" href="#">Бесплатно</a>
-          <img src="http://placehold.it/44x65" alt="Доставка (иконка)" width="44" height="65">
+        <div class="promo-bottom-row">
+          <div class="promo-block promo-block-slider">
+            <!-- <img src="img/slide-1.jpg" alt="Слайд 1" width="620" height="266">
+            <p>
+              <b>Перфораторы</b>
+              Настоящие мужские игрушки
+            </p> -->
+            <img src="img/slide-2.jpg" alt="Слайд 2" width="620" height="266">
+            <!-- <p>
+              <b>Дрели</b>
+              Соседям на радость!
+            </p>
+            <a class="button button-red slider-button" href="catalog.html">Открыть каталог</a>
+            <label class="visually-hidden" for="slide-1">Первый слайд</label>
+            <input type="radio" name="toggle-slide" id="slide-1">
+            <label class="visually-hidden" for="slide-2">Второй слайд</label>
+            <input type="radio" name="toggle-slide" id="slide-2" checked> -->
+          </div>
+          <div class="promo-block promo-block-discount promo-block-small">
+            <h3>Скидки 50%</h3>
+            <a class="button button-promo" href="#">На 350 товаров</a>
+          </div>
+          <div class="promo-block promo-block-delivery promo-block-small">
+            <h3>Доставка</h3>
+            <a class="button button-promo" href="#">Бесплатно</a>
+          </div>
         </div>
       </section>
 
@@ -109,7 +108,7 @@
         <section class="popular-products-body">
           <h3 class="visually-hidden">Список популярных товаров</h3>
           <ul class="popular-products-list">
-            <li class="catalog-item">
+            <li class="catalog-item-index">
               <a href="#"><img class="item-preview" src="img/perforator-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000"></a>
               <h4>Перфоратор BOSCH BFG 9000</h4>
               <p>
@@ -117,7 +116,7 @@
                 <span class="item-price">22500 Р.</span>
               </p>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item-index">
               <a href="#"><img class="item-preview" src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000"></a>
               <h4>Перфоратор BOSCH BFG 3000</h4>
               <p>
@@ -125,7 +124,7 @@
                 <span class="item-price">15500 Р.</span>
               </p>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item-index">
               <a href="#"><img class="item-preview" src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000"></a>
               <h4>Перфоратор BOSCH BFG 6000</h4>
               <p>
@@ -133,7 +132,7 @@
                 <span class="item-price">22500 Р.</span>
               </p>
             </li>
-            <li class="catalog-item catalog-item-new">
+            <li class="catalog-item-index catalog-item-new">
               <a href="#"><img class="item-preview" src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></a>
               <h4>Перфоратор BOSCH BFG 2000</h4>
               <p>
@@ -152,25 +151,28 @@
         <section class="popular-brands-body">
           <h3 class="visually-hidden">Список популярных производителей</h3>
           <div class="popular-brands-list">
-            <a href="#" aria-label="Продукция бренда «Bosch»"><img class="brand-logo" src="img/bosch.png" width="126" height="37" alt="Bosch"></a>
-            <a href="#" aria-label="Продукция бренда «Makita»"><img class="brand-logo" src="img/makita.png" width="123" height="40" alt="Makita"></a>
-            <a href="#" aria-label="Продукция бренда «DeWalt»"><img class="brand-logo" src="img/dewalt.png" width="146" height="44" alt="DeWalt"></a>
-            <a href="#" aria-label="Продукция бренда «Интерскол»"><img class="brand-logo" src="img/interskol.png" width="200" height="88" alt="Интерскол"></a>
-            <a href="#" aria-label="Продукция бренда «Hitachi»"><img class="brand-logo" src="img/hitachi.png" width="169" height="31" alt="Hitachi"></a>
-            <a href="#" aria-label="Продукция бренда «LG»"><img class="brand-logo" src="img/lg.png" width="121" height="73" alt="LG"></a>
-            <a href="#" aria-label="Продукция бренда «AEG»"><img class="brand-logo" src="img/aeg.png" width="151" height="96" alt="AEG"></a>
-            <a href="#" aria-label="Продукция бренда «Metabo»"><img class="brand-logo" src="img/metabo.png" width="204" height="69" alt="Metabo"></a>
+            <a class="popular-brands-item" href="#" aria-label="Продукция бренда «Bosch»"><img class="brand-logo" src="img/bosch.png" width="126" height="37" alt="Bosch"></a>
+            <a class="popular-brands-item" href="#" aria-label="Продукция бренда «Makita»"><img class="brand-logo" src="img/makita.png" width="123" height="40" alt="Makita"></a>
+            <a class="popular-brands-item" href="#" aria-label="Продукция бренда «DeWalt»"><img class="brand-logo" src="img/dewalt.png" width="146" height="44" alt="DeWalt"></a>
+            <a class="popular-brands-item" href="#" aria-label="Продукция бренда «Интерскол»"><img class="brand-logo" src="img/interskol.png" width="200" height="88" alt="Интерскол"></a>
+            <a class="popular-brands-item" href="#" aria-label="Продукция бренда «Hitachi»"><img class="brand-logo" src="img/hitachi.png" width="169" height="31" alt="Hitachi"></a>
+            <a class="popular-brands-item" href="#" aria-label="Продукция бренда «LG»"><img class="brand-logo" src="img/lg.png" width="121" height="73" alt="LG"></a>
+            <a class="popular-brands-item" href="#" aria-label="Продукция бренда «AEG»"><img class="brand-logo" src="img/aeg.png" width="151" height="96" alt="AEG"></a>
+            <a class="popular-brands-item" href="#" aria-label="Продукция бренда «Metabo»"><img class="brand-logo" src="img/metabo.png" width="204" height="69" alt="Metabo"></a>
           </div>
         </section>
       </section>
 
       <section class="services">
         <div class="container">
-          <h2>Сервисы</h2>
-          <p>
-            Хороший интернет-магазин отличается от плохого не только ценами!<br>
-            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-          </p>
+          <div class="services-heading">
+            <h2>Сервисы</h2>
+            <p>
+              Хороший интернет-магазин отличается от плохого не только ценами!<br>
+              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+            </p>
+          </div>
+
           <div class="service-details">
             <div class="service-navigation">
               <ul class="serives-list">
@@ -188,9 +190,9 @@
                   Ведь мы неплохо заработаем,<br>
                   поднимая его на ваш этаж!
                 </p>
-                <img class="service-image" src="img/delivery-service.png" width="468" height="261" alt="Иллюстрация к сервису доставки">
+                <!-- <img class="service-image" src="img/delivery-service.png" width="468" height="261" alt="Иллюстрация к сервису доставки"> -->
               </div>
-
+<!--
               <div class="service-description-warranty">
                 <h3>Гарантия</h3>
                 <p>
@@ -210,8 +212,7 @@
                 </p>
                 <a class="button button-red" href="#">Отправить заявку</a>
                 <img class="service-image" src="img/credit-service.png" width="468" height="261" alt="Иллюстрация к сервису доставки">
-              </div>
-
+              </div> -->
             </div>
           </div>
         </div>

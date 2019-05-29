@@ -59,9 +59,9 @@
       <div class="container">
         <ul class="breadcrumbs">
           <li><a href="index.html" aria-label="Вернуться на главную"><img class="icon breadcrumbs-icon" src="img/icon-home.svg" width="13" height="12" alt="Ссылка на главную"></a></li>
-          <li><a href="index.html">Каталог</a></li>
-          <li><a href="catalog.html">Инструмент</a></li>
-          <li class="breadcrumbs-current"><a href="index.html">Перфораторы</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li class="breadcrumbs-current"><a>Перфораторы</a></li>
         </ul>
 
         <div class="catalog-heading">
@@ -77,11 +77,13 @@
                 <legend>Цена:</legend>
                 <label class="visually-hidden" for="price-range">Диапазон цен</label>
                 <input type="range" name="price-range" id="price-range" min="1" max="30000" step="1">
-                <label class="visually-hidden" for="min-price">Минимальная цена</label>
-                <input type="text" name="min-price" id="min-price" placeholder="0">
-                <span>—<span>
-                <label class="visually-hidden" for="max-price">Максимальная цена</label>
-                <input type="text" name="max-price" id="max-price" placeholder="30000">
+                <div class="price-fields-wrap">
+                  <label class="visually-hidden" for="min-price">Минимальная цена</label>
+                  <input type="text" name="min-price" id="min-price" placeholder="0">
+                  <span>—</span>
+                  <label class="visually-hidden" for="max-price">Максимальная цена</label>
+                  <input type="text" name="max-price" id="max-price" placeholder="30000">
+                </div>
               </fieldset>
               <fieldset class="filter-brand">
                 <legend>Производители:</legend>
@@ -144,14 +146,14 @@
               <h2 class="visually-hidden">Подходящие товары</h2>
 
               <section class="catalog-sorting">
-                <div class="flex-wrap">
+                <div class="sort-by-wrap">
                   <h3>Сортировка</h3>
                   <ul class="sort-by">
                     <li><a class="sorting-link sorting-link-active" href="#">По цене</a></li>
                     <li><a class="sorting-link" href="#">По типу</a></li>
                     <li><a class="sorting-link" href="#">По функционалу</a></li>
-                    <li><a class="sorting-button sorting-button-increase sorting-button-active" href="#">Сортировка по увеличению цены</a></li>
-                    <li><a class="sorting-button sorting-button-decrease" href="#">Сортировка по уменьшению цены</a></li>
+                    <li><a class="sorting-button sorting-button-increase sorting-button-active" href="#" aria-label="Сортировка по увеличению цены">Сортировка по увеличению цены</a></li>
+                    <li><a class="sorting-button sorting-button-decrease" href="#" aria-label="Сортировка по уменьшению цены">Сортировка по уменьшению цены</a></li>
                   </ul>
                 </div>
               </section>
