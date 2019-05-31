@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -15,28 +15,27 @@
             <img width="109" height="18" src="img/logo-technomart.svg" alt="Логотип магазина «Техномарт»">
           </a>
           <input class="header-search-form" type="text" name="search" placeholder="Поиск:" aria-label="Строка поиска">
-          <ul>
-            <li class="bookmarks"><a href="#">Закладки: 0</a></li>
-            <li class="cart"><a href="#">Корзина: 0</a></li>
-            <li class="order"><a href="#">Оформить заказ</a></li>
-          </ul>
+          <a class="bookmarks" href="#">Закладки: 0</a>
+          <a class="cart" href="#">Корзина: 0</a>
+          <a class="order" href="#">Оформить заказ</a>
         </div>
       </div>
 
       <div class="header-bottom">
         <div class="container">
           <div class="flex-wrap">
-            <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+            <h1>Интернет-магазин строительных материалов<br>и инструментов для ремонта</h1>
             <p class="header-contacts">
               <span class="header-contacts-phone"><a href="tel:+78125550555">+7 (812) 555-05-55</a></span>
               <span class="header-contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
             </p>
-            <div class="user-area">
-              <ul class="user-area-options">
-                <li><a class="button button-user-login" href="#">Войти</a></li>
-                <li><a class="button button-user-register" href="#">Регистрация</a></li>
-              </ul>
-            </div>
+            <ul class="user-area-options">
+              <li><a class="button button-user-login" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+                Войти
+              </a></li>
+              <li><a class="button button-user-register" href="#">Регистрация</a></li>
+            </ul>
           </div>
 
           <nav class="main-navigation">
@@ -108,7 +107,11 @@
         <section class="popular-products-body">
           <h3 class="visually-hidden">Список популярных товаров</h3>
           <ul class="popular-products-list">
-            <li class="catalog-item-index">
+            <li class="catalog-item catalog-item-index">
+              <ul class="catalog-item-options">
+                <li><a class="button button-purchase-item" href="#">Купить</a></li>
+                <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
+              </ul>
               <a href="#"><img class="item-preview" src="img/perforator-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000"></a>
               <h4>Перфоратор BOSCH BFG 9000</h4>
               <p>
@@ -116,7 +119,11 @@
                 <span class="item-price">22500 Р.</span>
               </p>
             </li>
-            <li class="catalog-item-index">
+            <li class="catalog-item catalog-item-index">
+              <ul class="catalog-item-options">
+                <li><a class="button button-purchase-item" href="#">Купить</a></li>
+                <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
+              </ul>
               <a href="#"><img class="item-preview" src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000"></a>
               <h4>Перфоратор BOSCH BFG 3000</h4>
               <p>
@@ -124,7 +131,11 @@
                 <span class="item-price">15500 Р.</span>
               </p>
             </li>
-            <li class="catalog-item-index">
+            <li class="catalog-item catalog-item-index">
+              <ul class="catalog-item-options">
+                <li><a class="button button-purchase-item" href="#">Купить</a></li>
+                <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
+              </ul>
               <a href="#"><img class="item-preview" src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000"></a>
               <h4>Перфоратор BOSCH BFG 6000</h4>
               <p>
@@ -132,10 +143,15 @@
                 <span class="item-price">22500 Р.</span>
               </p>
             </li>
-            <li class="catalog-item-index catalog-item-new">
+            <li class="catalog-item catalog-item-index catalog-item-new">
+              <ul class="catalog-item-options">
+                <li><a class="button button-purchase-item" href="#">Купить</a></li>
+                <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
+              </ul>
               <a href="#"><img class="item-preview" src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000"></a>
               <h4>Перфоратор BOSCH BFG 2000</h4>
               <p>
+                <div class="price-before-placeholder"></div>
                 <span class="item-price">12500 Р.</span>
               </p>
             </li>
@@ -233,7 +249,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button button-red" href="#">Подробнее о компании</a>
+          <a class="button button-red" href="company.html">Подробнее о компании</a>
         </section>
 
         <section class="contacts">
@@ -256,7 +272,7 @@
           <div class="flex-wrap">
             <h2 class="visually-hidden">Навигация футера</h2>
             <a class="logo-footer" aria-label="Логотип магазина «Техномарт» в футере сайта">
-              <img width="109" height="18" alt="Логотип магазина «Техномарт»" src="img/logo-technomart.svg">
+              <img width="136" height="21" alt="Логотип магазина «Техномарт»" src="img/logo-technomart.svg">
             </a>
             <ul class="footer-menu">
               <li><a href="#">Компания</a></li>
@@ -290,12 +306,12 @@
           </p>
           <div class="footer-social">
             <ul>
-              <li><a class="social-button" href="#" aria-label="Техномарт Вконтакте">VK</a></li>
-              <li><a class="social-button" href="#" aria-label="Техномарт на Фейсбуке">Facebook</a></li>
-              <li><a class="social-button" href="#" aria-label="Техномарт в Инстаграме">Instagram</a></li>
+              <li><a class="social-button" href="#" aria-label="Техномарт Вконтакте"><span class="visually-hidden">VK</span><img src="img/icon-vk.svg" width="26" height="15" alt="Логотип «ВК»"></a></li>
+              <li><a class="social-button" href="#" aria-label="Техномарт на Фейсбуке"><span class="visually-hidden">Facebook</span><img src="img/icon-fb.svg" width="12" height="22" alt="Логотип «Facebook»"></a></li>
+              <li><a class="social-button" href="#" aria-label="Техномарт в Инстаграме"><span class="visually-hidden">Instagram</span><img src="img/icon-insta.svg" width="21" height="21" alt="Логотип «Instagram»"></a></li>
             </ul>
           </div>
-          <div class="developer-copyrights">
+          <div class="developer-copyrights-wrap">
             <p class="developer-copyrights developer-copyrights-mail">
               Обратная связь:<br>
               <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -316,17 +332,13 @@
             <fieldset>
               <legend class="visually-hidden">Напишите нам</legend>
               <div class="text-field-wrap">
-                <p>
-                  <div class="flex-wrap">
-                    <label for="contact-us-name">Ваше имя:</label>
-                    <input class="popup-text-field text-field-small" type="text" id="contact-us-name" name="name" placeholder="Имя Фамилия">
-                  </div>
+                <p class="flex-wrap">
+                  <label for="contact-us-name">Ваше имя:</label>
+                  <input class="popup-text-field text-field-small" type="text" id="contact-us-name" name="name" placeholder="Имя Фамилия">
                 </p>
-                <p>
-                  <div class="flex-wrap">
-                    <label for="contact-us-email">Ваш e-mail:</label>
-                    <input class="popup-text-field text-field-small" type="email" id="contact-us-email" name="email" placeholder="email@example.com">
-                  </div>
+                <p class="flex-wrap">
+                  <label for="contact-us-email">Ваш e-mail:</label>
+                  <input class="popup-text-field text-field-small" type="email" id="contact-us-email" name="email" placeholder="email@example.com">
                 </p>
               </div>
               <p>
