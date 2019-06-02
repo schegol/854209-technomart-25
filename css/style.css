@@ -1340,6 +1340,14 @@ a {
   border-radius: 2px;
 }
 
+.popup-text-field:hover {
+  border-color: #b5b5b5;
+}
+
+.popup-text-field:focus {
+  border-color: #ee3643;
+}
+
 .text-field-small {
   margin-bottom: 19px;
 
