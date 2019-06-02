@@ -1639,14 +1639,58 @@ a {
   text-transform: uppercase;
 }
 
-.filters input[type=radio],
-.filters input[type=checkbox] {
+.filters input[type="radio"],
+.filters input[type="checkbox"] {
   display: none;
 }
 
-.filters input[type=radio]:disabled,
-.filters input[type=checkbox]:disabled {
-  color: #b8b8b8;
+.checkbox-span-unchecked,
+.checkbox-span-checked,
+.radio-span-unchecked,
+.radio-span-checked {
+  position: relative;
+}
+
+.checkbox-span-unchecked svg,
+.checkbox-span-checked svg,
+.radio-span-unchecked svg,
+.radio-span-checked svg {
+  position: absolute;
+  top: 0px;
+  left: -35px;
+}
+
+.catalog-checkbox:checked ~ .checkbox-span-checked,
+.catalog-checkbox:not(:checked) ~ .checkbox-span-unchecked,
+.catalog-radio:checked ~ .radio-span-checked,
+.catalog-radio:not(:checked) ~ .radio-span-unchecked {
+  display: block;
+}
+
+.catalog-checkbox:not(:checked) ~ .checkbox-span-checked,
+.catalog-checkbox:checked ~ .checkbox-span-unchecked,
+.catalog-radio:not(:checked) ~ .radio-span-checked,
+.catalog-radio:checked ~ .radio-span-unchecked {
+  display: none;
+}
+
+.catalog-label-checkbox:hover path,
+.catalog-label-checkbox:focus path,
+.catalog-label-radio:hover path,
+.catalog-label-radio:focus path,
+.catalog-label-radio:hover circle,
+.catalog-label-radio:focus circle {
+  fill: #b5b5b5;
+}
+
+.catalog-checkbox:disabled ~ .checkbox-span,
+.catalog-radio:disabled ~ .radio-span {
+  opacity: 0.3;
+}
+
+.catalog-checkbox:disabled ~ .checkbox-name-span,
+.catalog-radio:disabled ~ .radio-name-span {
+  opacity: 0.4;
 }
 
 .filter-brand-list,
