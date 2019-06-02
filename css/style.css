@@ -1656,7 +1656,7 @@ a {
 .radio-span-unchecked svg,
 .radio-span-checked svg {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -35px;
 }
 
