@@ -162,6 +162,7 @@ a {
   position: absolute;
   top: 12px;
   left: 17px;
+
   width: 14px;
   height: 16px;
 
@@ -180,6 +181,7 @@ a {
   position: absolute;
   top: 12px;
   left: 18px;
+
   width: 15px;
   height: 15px;
 
@@ -293,6 +295,7 @@ a {
   position: absolute;
   top: 10px;
   right: 232px;
+
   width: 19px;
   height: 19px;
 
@@ -441,6 +444,7 @@ a {
 .promo-block-materials::before {
   top: 31px;
   right: 43px;
+
   width: 44px;
   height: 65px;
 
@@ -450,6 +454,7 @@ a {
 .promo-block-tools::before {
   top: 32px;
   right: 28px;
+
   width: 75px;
   height: 61px;
 
@@ -459,6 +464,7 @@ a {
 .promo-block-tech::before {
   top: 30px;
   right: 32px;
+
   width: 78px;
   height: 62px;
 
@@ -468,6 +474,7 @@ a {
 .promo-block-discount::before {
   top: 26px;
   right: 45px;
+
   width: 59px;
   height: 72px;
 
@@ -477,6 +484,7 @@ a {
 .promo-block-delivery::before {
   top: 32px;
   right: 32px;
+
   width: 78px;
   height: 63px;
 
@@ -641,6 +649,7 @@ a {
 .slider-button {
   top: 206px;
   left: 0;
+
   min-width: 195px;
 
   z-index: 30;
@@ -825,6 +834,7 @@ a {
   position: absolute;
   top: -40px;
   left: 230px;
+
   width: 10px;
   height: 272px;
   background: url("../img/service-shadow.png") 0 0 no-repeat;
@@ -933,6 +943,7 @@ a {
   position: absolute;
   top: 18px;
   right: 0;
+
   width: 468px;
   height: 261px;
 
@@ -945,6 +956,7 @@ a {
   position: absolute;
   top: -5px;
   right: -9px;
+
   width: 389px;
   height: 283px;
 
@@ -957,6 +969,7 @@ a {
   position: absolute;
   top: -5px;
   right: -9px;
+
   width: 465px;
   height: 285px;
 
@@ -1034,6 +1047,7 @@ a {
   position: absolute;
   top: 9px;
   left: 0;
+
   width: 25px;
   height: 2px;
 
@@ -1440,6 +1454,7 @@ a {
   position: absolute;
   top: 8px;
   right: -19px;
+
   width: 4px;
   height: 4px;
 
@@ -1478,6 +1493,7 @@ a {
   position: absolute;
   top: 8px;
   right: 18px;
+
   width: 7px;
   height: 7px;
 
@@ -1777,7 +1793,6 @@ a {
 .sort-by {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   width: 445px;
   margin: 0;
   padding: 10px 16px 0 0;
@@ -1834,9 +1849,7 @@ a {
   border-left-color: transparent;
 }
 
-.sorting-button-active::before/* ,
-.sorting-button-active:hover::before,
-.sorting-button-active:focus::before*/ {
+.sorting-button-active::before {
   border: 11px solid #ee3643;
   border-right-width: 6px;
   border-left-width: 6px;
@@ -1847,17 +1860,19 @@ a {
 .sorting-button-increase::before,
 .sorting-button-increase:hover::before,
 .sorting-button-increase:focus::before {
-  border-top: none;
   top: -10px;
   right: 10px;
+
+  border-top: none;
 }
 
 .sorting-button-decrease::before,
 .sorting-button-decrease:hover::before,
 .sorting-button-decrease:focus::before {
-  border-bottom: none;
   top: -10px;
   right: -22px;
+
+  border-bottom: none;
 }
 
 .catalog-list {
@@ -2144,6 +2159,7 @@ a {
   position: absolute;
   left: 80px;
   top: 48px;
+
   width: 66px;
   height: 66px;
 
