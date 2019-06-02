@@ -1351,7 +1351,7 @@ a {
 
 .user-area {
   margin: 0;
-  margin-left: 50px;
+  margin-left: auto;
   padding: 0;
   display: flex;
   flex-direction: column;
