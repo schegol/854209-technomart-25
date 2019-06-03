@@ -1754,6 +1754,11 @@ a {
   margin-bottom: 15px;
 }
 
+.catalog-label-checkbox,
+.catalog-label-radio {
+  cursor: pointer;
+}
+
 .filters fieldset {
   margin: 0;
   padding: 0;
