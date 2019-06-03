@@ -1423,7 +1423,8 @@ a {
 }
 
 .user-name:active,
-.user-name:active a {
+.user-name:active a,
+.user-name a:active {
   color: #bfc2c4;
 }
 
@@ -1447,7 +1448,8 @@ a {
 }
 
 .user-name:active path,
-.user-name:active path {
+.user-name-profile:active path,
+.user-name-logout:active path {
   fill: #c5c5c5;
 }
 
