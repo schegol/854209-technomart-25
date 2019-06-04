@@ -71,7 +71,7 @@ a {
 .main-menu,
 .catalog-item,
 .popular-products-list,
-.serives-list,
+.services-list,
 .delivery-service-list,
 .footer-menu,
 .footer-featured-menu,
@@ -893,7 +893,7 @@ a {
   background: url("../img/service-shadow.png") 0 0 no-repeat;
 }
 
-.serives-list {
+.services-list {
   margin: 0;
   margin-right: 80px;
   padding: 0;
@@ -908,20 +908,20 @@ a {
   margin-bottom: 0;
 }
 
-.service-details input[type="radio"] {
+/* .service-details input[type="radio"] {
   display: none;
-}
+} */
 
-.serives-list-item:not(.serives-list-active) {
+.services-list-item:not(.services-list-active) {
   margin-bottom: 1px;
 }
 
-.serives-list-item:not(.serives-list-active) label {
+.services-list-item:not(.services-list-active) label {
   box-shadow: 0 1px 0 #293449,
               inset 0 1px 0 #405069;
 }
 
-.serives-list label {
+.services-list label {
   padding: 16px 0 16px 21px;
 
   font-size: 21px;
@@ -934,22 +934,25 @@ a {
   cursor: pointer;
 }
 
-.serives-list-item label:hover,
-.serives-list-item label:focus {
+
+.services-list-item label:hover,
+.service-delivery:focus ~ .services-list .service-delivery-label,
+.service-warranty:focus ~ .services-list .service-warranty-label,
+.service-credit:focus ~ .services-list .service-credit-label {
   background-color: #293449;
 }
 
-.service-delivery:checked ~ .serives-list label[for="service-delivery"],
-.service-warranty:checked ~ .serives-list label[for="service-warranty"],
-.service-credit:checked ~ .serives-list label[for="service-credit"] {
+.service-delivery:checked ~ .services-list label[for="service-delivery"],
+.service-warranty:checked ~ .services-list label[for="service-warranty"],
+.service-credit:checked ~ .services-list label[for="service-credit"] {
   color: #32425c;
 
   background-color: #fff;
   box-shadow: none;
 }
 
-.serives-list-active label:hover,
-.serives-list-active label:focus {
+.services-list-active label:hover,
+.services-list-active label:focus {
   color: #fff;
 }
 
@@ -1769,11 +1772,11 @@ a {
 }
 
 .catalog-label-checkbox:hover path,
-.catalog-label-checkbox:focus path,
 .catalog-label-radio:hover path,
-.catalog-label-radio:focus path,
 .catalog-label-radio:hover circle,
-.catalog-label-radio:focus circle {
+.catalog-checkbox:focus ~ .checkbox-span path,
+.catalog-radio:focus ~ .radio-span path,
+.catalog-radio:focus ~ .radio-span circle {
   fill: #b5b5b5;
 }
 
