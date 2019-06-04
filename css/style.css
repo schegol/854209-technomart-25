@@ -683,8 +683,7 @@ a {
 
   border-top: none;
   border-right: none;
-  -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .arrow-label-right {
@@ -693,8 +692,7 @@ a {
 
   border-top: none;
   border-right: none;
-  -webkit-transform: rotate(-135deg);
-      transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .slider-button {
@@ -812,9 +810,7 @@ a {
   top: 50%;
   left: 50%;
 
-  -webkit-transform: translate(-50%, -50%);
-
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .popular-brands-item:hover,
@@ -1581,8 +1577,8 @@ a {
   border: 2px solid #dcdfe3;
   border-left: none;
   border-bottom: none;
-  -webkit-transform: rotate(45deg);
-      transform: rotate(45deg);
+
+  transform: rotate(45deg);
 }
 
 .catalog-heading {
@@ -1663,8 +1659,8 @@ a {
   width: 180px;
   height: 2px;
   background-color: #d7dcde;
-  -webkit-transform: translateY(39px);
-      transform: translateY(39px);
+
+  transform: translateY(39px);
 }
 
 .price-range-filler {
