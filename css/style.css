@@ -1463,12 +1463,6 @@ a {
   color: inherit;
 }
 
-.user-name:active,
-.user-name:active a,
-.user-name a:active {
-  color: #bfc2c4;
-}
-
 .user-name svg {
   position: absolute;
 }
@@ -1483,14 +1477,21 @@ a {
   right: 10px;
 }
 
-.user-name:hover path,
-.user-name:focus path {
+.user-name-link:hover path,
+.user-name-link:focus path {
   fill: #32425c;
 }
 
-.user-name:active path,
+/* .user-name:active,
+.user-name:active a, */
+.user-name a:active {
+  color: #bfc2c4;
+}
+
+/* .user-name:active path, */
 .user-name-profile:active path,
-.user-name-logout:active path {
+.user-name-logout:active path,
+.user-name-link:active path {
   fill: #c5c5c5;
 }
 
@@ -2070,7 +2071,8 @@ a {
   display: none;
 }
 
-.catalog-item:hover .catalog-item-options {
+.catalog-item:hover .catalog-item-options,
+.catalog-item:focus .catalog-item-options {
   display: block;
 }
 
