@@ -1469,8 +1469,12 @@ a {
   background-color: #fff;
 }
 
-.user-name a {
+.user-name-link {
   color: inherit;
+}
+
+.user-name-profile {
+  display: block;
 }
 
 .user-name svg {
@@ -1922,6 +1926,7 @@ a {
 
 .sorting-button {
   position: relative;
+  display: block;
 
   font-size: 0;
 
@@ -1961,7 +1966,7 @@ a {
 .sorting-button-increase::before,
 .sorting-button-increase:hover::before,
 .sorting-button-increase:focus::before {
-  top: -10px;
+  top: 4px;
   right: 10px;
 
   border-top: none;
@@ -1970,7 +1975,7 @@ a {
 .sorting-button-decrease::before,
 .sorting-button-decrease:hover::before,
 .sorting-button-decrease:focus::before {
-  top: -10px;
+  top: 4px;
   right: -22px;
 
   border-bottom: none;
