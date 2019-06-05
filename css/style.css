@@ -731,20 +731,30 @@ a {
   display: none;
 } */
 
-.popular-products-heading,
-.popular-brands-heading {
+.heading-flex-wrap {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 
   background-color: #f9f5f0;
 }
 
+.popular-products-heading,
+.popular-brands-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 25px;
+}
+
 .popular-products-heading h2,
 .popular-brands-heading h2 {
   margin: 0;
-  padding: 30px 0 30px 28px;
+  /* padding: 30px 0 30px 28px; */
 
   font-size: 30px;
   line-height: 30px;
@@ -755,7 +765,7 @@ a {
 
 .popular-products-heading a,
 .popular-brands-heading a {
-  margin: 25px 25px 25px 0;
+  /* margin: 25px 25px 25px 0; */
   min-width: 253px;
 
   vertical-align: middle;
@@ -1582,17 +1592,22 @@ a {
   transform: rotate(45deg);
 }
 
+.catalog-heading-wrap {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: start;
+  align-items: center;
+  background-color: #f2f6f8;
+}
+
 .catalog-heading {
   margin: 0;
-  margin-bottom: 20px;
-  padding: 0;
-
-  background-color: #f2f6f8;
+  padding: 30px;
 }
 
 .catalog-heading h2 {
   margin: 0;
-  padding: 30px 0 30px 30px;
+  /* padding: 30px 0 30px 30px; */
 
   font-size: 30px;
   line-height: 30px;
