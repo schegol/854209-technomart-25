@@ -54,6 +54,10 @@ a {
   z-index: 100;
 }
 
+.popup-show {
+  display: block;
+}
+
 .container {
   width: 940px;
   margin: 0 auto;
@@ -1329,7 +1333,7 @@ a {
   width: 460px;
 }
 
-.popup-close {
+.popup-cross {
   position: absolute;
   top: 9px;
   right: 9px;
