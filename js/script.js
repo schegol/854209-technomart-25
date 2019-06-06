@@ -90,8 +90,6 @@ if (popupMap) {
   });
 }
 
-
-//
 // ymaps.ready(function () {
 //     var myMap = new ymaps.Map('popup-map', {
 //             center: [59.939419, 30.316818],
@@ -127,7 +125,6 @@ if (popupMap) {
 //     myMap.geoObjects
 //         .add(myPlacemarkWithContent);
 // });
-
 
 ///////////Попап "Товар добавлен в корзину"///////////
 
