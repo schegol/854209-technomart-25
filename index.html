@@ -124,7 +124,7 @@
           <ul class="popular-products-list">
             <li class="catalog-item catalog-item-index">
               <ul class="catalog-item-options">
-                <li><a class="button button-purchase-item popup-call" href="purchase.html">Купить</a></li>
+                <li><a class="button button-purchase-item call-item-added" href="purchase.html">Купить</a></li>
                 <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
               </ul>
               <img class="item-preview" src="img/perforator-4.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
@@ -136,7 +136,7 @@
             </li>
             <li class="catalog-item catalog-item-index">
               <ul class="catalog-item-options">
-                <li><a class="button button-purchase-item popup-call" href="purchase.html">Купить</a></li>
+                <li><a class="button button-purchase-item call-item-added" href="purchase.html">Купить</a></li>
                 <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
               </ul>
               <img class="item-preview" src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -148,7 +148,7 @@
             </li>
             <li class="catalog-item catalog-item-index">
               <ul class="catalog-item-options">
-                <li><a class="button button-purchase-item popup-call" href="purchase.html">Купить</a></li>
+                <li><a class="button button-purchase-item call-item-added" href="purchase.html">Купить</a></li>
                 <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
               </ul>
               <img class="item-preview" src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -160,7 +160,7 @@
             </li>
             <li class="catalog-item catalog-item-index catalog-item-new">
               <ul class="catalog-item-options">
-                <li><a class="button button-purchase-item popup-call" href="purchase.html">Купить</a></li>
+                <li><a class="button button-purchase-item call-item-added" href="purchase.html">Купить</a></li>
                 <li><a class="button button-bookmark-item" href="#">В закладки</a></li>
               </ul>
               <img class="item-preview" src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
@@ -274,10 +274,10 @@
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <a class="map popup-call" href="https://yandex.ru/maps/" aria-label="Открыть карту">
+          <a class="map call-map" href="https://yandex.ru/maps/" aria-label="Открыть карту">
             <img src="img/map-small.png" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
-          <a class="button button-red popup-call" href="writeus.html">Заблудились? Напишите нам!</a>
+          <a class="button button-red call-write-us" href="writeus.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -372,10 +372,14 @@
 
     <section class="popup popup-map">
       <h2 class="visually-hidden">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</h2>
-        <div id="popup-map"></div>
+        <div class="popup-map-script" id="popup-map"></div>
+        <a class="map-accessible-picture" href="https://yandex.ru/maps/">
+          <img width="940" height="446" src="img/map-big.png">
+        </a>
       <span class="popup-cross popup-close" aria-label="Закрыть карту"></span>
     </section>
 
-    <!-- <script src="js/script.js" type="text/javascript"></script> -->
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>
