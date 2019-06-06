@@ -1,3 +1,5 @@
+///////////Попап "Свяжитесь с нами"///////////
+
 var popupWriteUs = document.querySelector(".popup-contact-us");
 if (popupWriteUs) {
   var openWriteUs = document.querySelector(".call-write-us");
@@ -61,11 +63,33 @@ if (popupWriteUs) {
   });
 }
 
-///////////////////////////////////////////////////////////
+///////////Попап с картой (пока просто картинка)///////////
 
-// var openMap = document.querySelector("".call-map");
-// openMapPopup.classList.add(popup-show);
-//
+var popupMap = document.querySelector(".popup-map");
+if (popupMap) {
+  var openMap = document.querySelector(".call-map");
+  var closeMap = popupMap.querySelector(".popup-close");
+
+  openMap.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupMap.classList.add("popup-show");
+  });
+
+  closeMap.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popupMap.classList.remove("popup-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popupMap.classList.contains("popup-show")) {
+        popupMap.classList.remove("popup-show");
+      }
+    }
+  });
+}
+
 
 //
 // ymaps.ready(function () {
@@ -105,7 +129,7 @@ if (popupWriteUs) {
 // });
 
 
-///////////////////////////////////////////////////////////
+///////////Попап "Товар добавлен в корзину"///////////
 
 var openItemAdded = document.querySelectorAll(".call-item-added");
 if (openItemAdded) {
