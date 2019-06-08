@@ -1376,6 +1376,7 @@ a {
   background: url("../img/icon-close.svg") no-repeat;
 
   cursor: pointer;
+  z-index: 503;
 }
 
 .popup-contact-us .flex-wrap {
@@ -1487,12 +1488,17 @@ a {
 }
 
 .popup-map-script {
+  position: absolute;
   width: 100%;
   height: 446px;
+
+  z-index: 502;
 }
 
 .map-accessible-picture {
   position: absolute;
+
+  z-index: 501;
 }
 
 .user-area {
