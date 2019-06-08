@@ -1482,14 +1482,17 @@ a {
   height: 446px;
 
   box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
+
+  overflow: hidden;
+}
+
+.popup-map-script {
+  width: 100%;
+  height: 446px;
 }
 
 .map-accessible-picture {
   position: absolute;
-}
-
-.popup-map-script {
-  z-index: 101;
 }
 
 .user-area {
