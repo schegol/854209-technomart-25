@@ -1,5 +1,3 @@
-///////////Попап "Свяжитесь с нами"///////////
-
 var popupWriteUs = document.querySelector(".popup-contact-us");
 if (popupWriteUs) {
   var openWriteUs = document.querySelector(".call-write-us");
@@ -63,8 +61,6 @@ if (popupWriteUs) {
   });
 }
 
-///////////Попап с картой (пока просто картинка)///////////
-
 var popupMap = document.querySelector(".popup-map");
 if (popupMap) {
   var openMap = document.querySelector(".call-map");
@@ -90,8 +86,6 @@ if (popupMap) {
   });
 }
 
-///////////Подключение интерактивной карты///////////
-
 var mapInteractive = document.querySelector(".popup-map-script");
 if (mapInteractive) {
   ymaps.ready(function () {
@@ -110,19 +104,11 @@ if (mapInteractive) {
               hintContent: 'Собственный значок метки с контентом',
               balloonContent: 'HTML Academy, first level',
           }, {
-              // Опции.
-              // Необходимо указать данный тип макета.
               iconLayout: 'default#imageWithContent',
-              // Своё изображение иконки метки.
-              iconImageHref: 'https://i.ya-webdesign.com/images/pin-clipart-map-pin-5.png', // здесь мы указываем путь до нашей картинки пина (метки)
-              // Размеры метки.
-              iconImageSize: [27, 48], // здесь уже все просто и понятно , если переводить с английского названия свойств
-              // Смещение левого верхнего угла иконки относительно
-              // её "ножки" (точки привязки).
+              iconImageHref: 'https://i.ya-webdesign.com/images/pin-clipart-map-pin-5.png',
+              iconImageSize: [27, 48],
               iconImageOffset: [-12, -48],
-              // Смещение слоя с содержимым относительно слоя с картинкой.
               iconContentOffset: [15, 15],
-              // Макет содержимого.
               iconContentLayout: MyIconContentLayout
           });
 
@@ -130,8 +116,6 @@ if (mapInteractive) {
           .add(myPlacemarkWithContent);
   });
 }
-
-///////////Попап "Товар добавлен в корзину"///////////
 
 var openItemAdded = document.querySelectorAll(".call-item-added");
 if (openItemAdded) {
